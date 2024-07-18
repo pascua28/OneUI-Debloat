@@ -8,6 +8,7 @@ Be sure to check the commits so you may see yourselves what stuffs were disabled
 # Instructions
 
 I recommend using Adhell which works even when unrooted. The advantage of using Adhell compared to using adb, especially when debloating, is that you don't need a computer plus, you can re-enable the apps without resetting your device. Installation instructions is here: https://forum.xda-developers.com/t/adhell-3-knox.3908002/post-85788393 and apk can be downloaded from here this repo.
+The modified Adhell3 source can be found here: https://github.com/pascua28/adhell3
 
 ![alt text](https://github.com/pascua28/OneUI-Debloat/blob/master/Screenshots/1.jpg)
 After installation make sure these toggles are enabled as shown.
