@@ -1,3 +1,4 @@
+
 # Making OneUI faster and lighter
 
 This repo is a list of things that can be disabled to make our device faster and lighter and by doing so, we can get more free RAM and more battery life. This list will be updated on a regular basis as more apps and more components will be tested if they are safe to disable.
@@ -38,8 +39,7 @@ This list is just a conservative debloat. The goal of this is to disable as much
 - Adapt Sound (com.sec.hearingadjust)
 - Android Auto (com.google.android.projection.gearhead) - Use apps on your vehicle
 - Android S Easter Egg (com.android.egg)
-- Android system intelligence (com.google.android.as) - Needed by adaptive battery
-- AppLinker (com.sec.android.app.applinker)
+- Android system intelligence and Private Compute Services (com.google.android.as, com.google.android.as ) - Needed by adaptive battery
 - AR Apps:
   - AR Doodle (com.samsung.android.ardrawing)
   - AR Emoji (com.samsung.android.aremoji)
@@ -48,7 +48,6 @@ This list is just a conservative debloat. The goal of this is to disable as much
   - Crocro and friends (com.samsung.android.app.camera.sticker.facearavatar.preload)
 - ARCore (com.google.ar.core) - A.K.A Play Services for AR
 - Auto Hotspot (com.sec.mhs.smarttethering)
-- Bixby Routines (com.samsung.android.app.routines)
 - Bixby vision:
   - Bixby Vision (com.samsung.android.visionintelligence)
   - BixbyVision Framework (com.samsung.android.bixbyvision.framework)
@@ -85,14 +84,12 @@ This list is just a conservative debloat. The goal of this is to disable as much
   - Tools (com.sec.android.app.quicktool)
 - Error (com.sec.app.RilErrorNotifier)
 - Facebook bloats:
-  - Facebook App Installer (Facebook App Installer)
-  - Facebook App Manager (com.facebook.appmanager)
-  - Facebook Services (com.facebook.services)
+  - Meta App Installer (Facebook App Installer)
+  - Meta App Manager (com.facebook.appmanager)
+  - Meta Services (com.facebook.services)
 - FaceService (com.samsung.faceservice) - No idea what this is but face unlock still works without it
 - FACM (com.samsung.android.aircommandmanager) - Air gestures
 - Find My Mobile (com.samsung.android.fmm)
-- Finder (com.samsung.android.app.galaxyfinder)
-- Foundation (com.monotype.android.font.foundation)  - Just a font
 - Galaxy apps:
   - App update (com.samsung.android.app.updatecenter)
   - Application recommendations (com.samsung.android.mapsagent)
@@ -126,6 +123,7 @@ This list is just a conservative debloat. The goal of this is to disable as much
 - Microsoft features:
   - Link to Windows Service (com.samsung.android.mdx)
   - OneDrive (com.microsoft.skydrive)
+ - Modes and Routines (com.samsung.android.app.routines)
 - Nearby devices apps:
   - Nearby device scanning (com.samsung.android.easysetup)
   - Nearby device scanning (com.samsung.android.beaconmanager)
@@ -163,7 +161,6 @@ This list is just a conservative debloat. The goal of this is to disable as much
 - SetupWizardLegalProvider (com.sec.android.app.setupwizardlegalprovider)
 - Sharing apps:
   - Group Sharing (com.samsung.android.mobileservice)
-  - Link Sharing (com.samsung.android.app.simplesharing)
   - Quick Share (com.samsung.android.aware.service)
   - Quick Share (com.samsung.android.app.sharelive)
 - SIM Toolkit 1 (com.android.stk)
@@ -171,7 +168,6 @@ This list is just a conservative debloat. The goal of this is to disable as much
 - Smart suggestions (com.samsung.android.smartsuggestions)
 - Smart Touch Call (com.samsung.android.visualars)
 - Smart View (com.samsung.android.smartmirroring)
-- Smart Widget (com.samsung.android.app.smartwidget)
 - SmartFaceService (com.samsung.android.smartface) - Smart stay
 - SmartThings Framework (com.samsung.android.service.stplatform)
 - Software updates:
@@ -193,14 +189,14 @@ This list is just a conservative debloat. The goal of this is to disable as much
 - Wireless emergency alerts (com.google.android.cellbroadcastreceiver)
 - WlanTest (com.sec.android.app.wlantest)
 - Work profile:
-  - Work profile (com.samsung.android.knox.containeragent)
   - Work profile (com.samsung.android.knox.containercore)
   - Work Setup (com.android.managedprovisioning)
 
 # Google Play Services Disabled Components List
 
-You may want to clear Google Play Services app data after disabling any of these
+You may want to clear Google Play Services app data after disabling any of these.
 
+## If you don't want to search and disable every service, provider or receiver, you can just disable all of Google Play Services receivers.
 ## Providers:
 
 - ReportingContentProvider (com.google.android.location.reporting.service.utils.ReportingContentProvider)
