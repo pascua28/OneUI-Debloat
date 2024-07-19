@@ -41,6 +41,7 @@ This list is just a conservative debloat as even most bloat apps do not run in t
   - AR Zone (com.samsung.android.arzone)
   - AutoDoodle (com.sec.android.autodoodle.service)
   - Crocro and friends (com.samsung.android.app.camera.sticker.facearavatar.preload)
+ - AudioMirroring (com.samsung.android.audiomirroring)
 - BBCAgent (com.samsung.android.bbc.bbcagent)
 - Bixby vision:
   - Bixby Vision (com.samsung.android.visionintelligence)
@@ -73,6 +74,9 @@ This list is just a conservative debloat as even most bloat apps do not run in t
   - Application recommendations (com.samsung.android.mapsagent)
   - Recommended apps (com.samsung.android.app.omcagent)
  - Galaxy Service Setup (com.samsung.android.dbsc)
+ - Galaxy Themes (disable only if you don't have custom theme):
+	 - Galaxy Themes (com.samsung.android.themestore)
+	 - Galaxy Themes Services (com.samsung.android.themecenter)
 - Gallery stories (com.samsung.storyservice) - Creates stories from your gallery
 - Game Services:
   - Game Booster (com.samsung.android.game.gametools)
@@ -106,6 +110,7 @@ This list is just a conservative debloat as even most bloat apps do not run in t
  - NetworkDiagnostic (com.samsung.android.networkdiagnostic)
 - Netflix (com.netflix.mediaclient)
 - Peripheral Framework (com.samsung.android.peripheral.framework)
+- Perso (com.sec.android.app.personalization)
 - Phone (com.samsung.crane) - not the dialer app. This provides additional features to the Samsung dialer.
 - Samsung Cloud:
 	- Samsung Cloud (com.samsung.android.scloud)
@@ -116,6 +121,7 @@ This list is just a conservative debloat as even most bloat apps do not run in t
   - Autofill with Samsung Pass (com.samsung.android.samsungpassautofill)
   - Samsung Pass (com.samsung.android.samsungpass)
 - Samsung Pay:
+	- com.samsung.android.knox.mpos
   - Samsung PaymentFramework (com.samsung.android.spayfw)
   - Samsung Wallet_DKFW (com.samsung.android.carkey)
 - Samsung Push Service (com.sec.spp.push) - Disabling this won't show you any prompts on your phone about new Samsung account logins on other devices.
@@ -140,6 +146,7 @@ This list is just a conservative debloat as even most bloat apps do not run in t
 - SVC Agent (com.samsung.android.svcagent)
 - System Tracing (com.android.traceur)
 - VolumeMonitorProvider (com.sec.android.app.volumemonitorprovider)
+- WiFiAiService (com.samsung.android.wifi.ai)
 - Wi-Fi tips (com.samsung.android.net.wifi.wifiguider)
 
 # Google Play Services Disabled Components List
