@@ -1,4 +1,5 @@
 
+
 # Making OneUI faster and lighter
 
 This repo is a list of things that can be disabled to make our device faster and lighter and by doing so, we can get more free RAM and more battery life. This list will be updated on a regular basis as more apps and more components will be tested if they are safe to disable.
@@ -33,49 +34,41 @@ I perform some tests after disabling every app/component to make sure it doesn't
 
 # **OneUI Disabled Apps List**
 
-This list is just a conservative debloat. The goal of this is to disable as much apps while preserving more important features. Some apps were grouped together as they might be needed by other apps of the same group.
+This list is just a conservative debloat as even most bloat apps do not run in the background and a lot of bloat apps don't run as well when some of the features are disabled or not currently in use (like Smart Suggestions, Find My Mobile, Secure Folder, DeX, GPUWatch, etc). The goal of this is to disable as much apps while preserving more important features. Some apps were grouped together as they might be needed by other apps of the same group.
 
-- 3 Button Navigation Bar (com.android.internal.systemui.navbar.threebutton)
-- AASAservice (com.samsung.aasaservice)
-- Adapt Sound (com.sec.hearingadjust)
-- Android Auto (com.google.android.projection.gearhead) - Use apps on your vehicle
-- Android S Easter Egg (com.android.egg)
-- Android system intelligence and Private Compute Services (com.google.android.as, com.google.android.as ) - Needed by adaptive battery
+- Ad Services:
+	- Ad Privacy (com.google.android.adservices.api)
+	- com.google.android.ondevicepersonalization.services
+	- Main Components (com.google.mainline.adservices)
+- Android System Intelligence:
+	- Android System Intelligence (com.google.android.as)
+	- com.google.android.federatedcompute
+	- com.google.android.overlay.gmsconfig.asi
+	- Private Compute Services (com.google.android.as.oss)
+- android.auto_generated_rro_product__
 - AR Apps:
+	- ARCore (com.google.ar.core) - A.K.A Play Services for AR
   - AR Doodle (com.samsung.android.ardrawing)
   - AR Emoji (com.samsung.android.aremoji)
+  - AR Emoji Editor (com.samsung.android.aremojieditor)
   - AR Zone (com.samsung.android.arzone)
   - AutoDoodle (com.sec.android.autodoodle.service)
   - Crocro and friends (com.samsung.android.app.camera.sticker.facearavatar.preload)
-- ARCore (com.google.ar.core) - A.K.A Play Services for AR
-- Auto Hotspot (com.sec.mhs.smarttethering)
+- BBCAgent (com.samsung.android.bbc.bbcagent)
 - Bixby vision:
   - Bixby Vision (com.samsung.android.visionintelligence)
   - BixbyVision Framework (com.samsung.android.bixbyvision.framework)
 - Bixby voice:
-  - Bixby dictation (com.samsung.android.bixby.service)
   - Bixby Voice (com.samsung.android.bixby.agent)
   - SettingsBixby (com.samsung.android.app.settings.bixby)
-  - SystemUIBixby2 (com.samsung.systemui.bixby2)
   - Voice wake-up (com.samsung.android.bixby.wakeup)
-- BluetoothTest (com.sec.android.app.bluetoothtest)
-- Call & text on other devices (com.samsung.android.mdecservice)
-- Camera services (these stuffs doesn't seem to provide any additional functionality)
-  - Cameralyzer (com.sec.factory.cameralyzer)
-  - FactoryCamera (com.sec.factory.camera)
-  - SCameraService (com.samsung.android.camerasdkservice)
-  - SCameraXService (com.samsung.android.cameraxservice)
-- Cell Broadcast Service (com.google.android.cellbroadcastservice) - needed to receive broadcast messages
-- ChromeCustomizations (com.sec.android.app.chromecustomizations)
-- ClipboardSaveService (com.samsung.clipboardsaveservice)
+- CCInfo (com.sec.android.CcInfo
+- com.samsung.android.knox.attestation
+- com.samsung.ucs.agen.ese
 - Customization Service (com.samsung.android.rubin.app)
-- DECO PIC (com.samsung.android.livestickers)
 - Device Health Services (com.google.android.apps.turbo)
-- Device security (com.samsung.android.sm.devicesecurity) - Device protection found under device care
-- Device Test (com.sec.factory)
-- Dictionary (com.diotek.sec.lookup.dictionary)
 - Digital Wellbeing (com.samsung.android.forest)
-- Dual Messenger (com.samsung.android.da.daagent)
+- DQA (com.samsung.android.dqagent)
 - Edge panels:
   - Apps (com.samsung.android.app.appsedge)
   - Clipboard edge (com.samsung.android.app.clipboardedge)
@@ -83,26 +76,22 @@ This list is just a conservative debloat. The goal of this is to disable as much
   - People (com.samsung.android.service.peoplestripe)
   - Tasks (com.samsung.android.app.taskedge)
   - Tools (com.sec.android.app.quicktool)
-- Error (com.sec.app.RilErrorNotifier)
 - Facebook bloats:
   - Meta App Installer (Facebook App Installer)
   - Meta App Manager (com.facebook.appmanager)
   - Meta Services (com.facebook.services)
-- FaceService (com.samsung.faceservice) - No idea what this is but face unlock still works without it
 - FACM (com.samsung.android.aircommandmanager) - Air gestures
-- Find My Mobile (com.samsung.android.fmm)
 - Galaxy apps:
   - App update (com.samsung.android.app.updatecenter)
   - Application recommendations (com.samsung.android.mapsagent)
   - Recommended apps (com.samsung.android.app.omcagent)
-- Galaxy Themes (com.samsung.android.themestore)
+ - Galaxy Service Setup (com.samsung.android.dbsc)
 - Gallery stories (com.samsung.storyservice) - Creates stories from your gallery
 - Game Services:
   - Game Booster (com.samsung.android.game.gametools)
   - Game Launcher (com.samsung.android.game.gamehome)
   - Game Optimizing Service (com.samsung.android.game.gos)
 - Google Bloatware:
-  - Duo Installer (com.google.android.apps.tachyon) - Installs Google Duo annoyingly
   - Gmail (com.google.android.gm)
   - Google (com.google.android.googlequicksearchbox)
   - Google Assistant (com.android.hotwordenrollment.xgoogle)
@@ -110,88 +99,61 @@ This list is just a conservative debloat. The goal of this is to disable as much
   - Google Location History (com.google.android.gms.location.history)
   - Google One Time Init (com.google.android.onetimeinitializer)
   - Google Partner Setup (com.google.android.partnersetup)
+  - Google Safety Center Resources (com.google.android.safetycenter.resources)
   - Google Wi-Fi Provisioner (com.google.android.apps.carrier.carrierwifi)
   - Maps (com.google.android.apps.maps)
+  - Meet (com.google.android.apps.tachyon)
   - Speech services by Google (com.google.android.tts)
   - YouTube (com.google.android.youtube)
-- GPUWatch (com.samsung.gpuwatchapp)
-- HandwritingService (com.samsung.android.sdk.handwriting)
-- Live Transcribe & Sound Notifications (com.google.audio.hearing.visualization.accessibility.scribe)
-- Live Wallpaper Picker (com.android.wallpaper.livepicker)
-- Magnifier (com.sec.android.app.magnifier)
-- Market Feedback Agent (com.google.android.feedback)
-- Media and devices (com.samsung.android.mdx.quickboard)
+ - HdmApp (com.samsung.android.hdmapp)
+  - Hiya Service (com.hiya.star)
+  - iaft (com.sec.android.iaft)
+  - ImsLogger (com.sec.imslogger)
+  - Knox Analytics Uploader (com.samsung.android.knox.analytics.uploader)
+  - KnoxPushManager (com.samsung.android.knox.pushmanager)
+  - KnoxZT Framework (com.samsung.android.knox.zt.framework) 
 - Microsoft features:
   - Link to Windows Service (com.samsung.android.mdx)
   - OneDrive (com.microsoft.skydrive)
- - Modes and Routines (com.samsung.android.app.routines)
-- Nearby devices apps:
-  - Nearby device scanning (com.samsung.android.easysetup)
-  - Nearby device scanning (com.samsung.android.beaconmanager)
-  - Nearby Service (com.samsung.android.allshare.service.mediashare)
-  - Your Phone Companion (com.microsoft.appmanager)
+ - MobileWips (com.samsung.android.server.wifi.mobilewips)
+ - NetworkDiagnostic (com.samsung.android.networkdiagnostic)
 - Netflix (com.netflix.mediaclient)
-- NFC (com.android.nfc)
-- Noto Serif / Source Sans Pro (com.android.theme.font.notoserifsource) - Just a font
-- NSDSWebApp (com.sec.vsim.ericssonnsds.webapp)
-- PartnerNetflixActivation (com.netflix.partner.activation)
-- Samsung ApexService (com.sec.android.app.apex)
-- Samung DeX:
-  - DeX for PC (com.sec.android.app.dexonpc)
-  - Samsung DeX (com.sec.android.desktopmode.uiservice)
-  - Samsung DeX home (com.sec.android.app.desktoplauncher)
-  - Samsung DeX System UI (com.samsung.desktopsystemui)
+- Peripheral Framework (com.samsung.android.peripheral.framework)
+- Phone (com.samsung.crane) - not the dialer app. This provides additional features to the Samsung dialer.
+- Samsung Cloud:
+	- Samsung Cloud (com.samsung.android.scloud)
+	- Samsung Cloud Assistant (com.samsung.android.scpm)
 - Samsung Free (com.samsung.android.app.spage)
-- Samsung Galaxy Friends (com.samsung.android.mateagent)
-- Samsung Location SDK (com.sec.location.nsflp2)
 - Samsung Pass:
   - Authentication Framework (com.samsung.android.authfw)
-  - AuthFw TaPack (com.samsung.android.tapack.authfw)
   - Autofill with Samsung Pass (com.samsung.android.samsungpassautofill)
   - Samsung Pass (com.samsung.android.samsungpass)
-  - Samsung Pass (com.samsung.android.dkey)
 - Samsung Pay:
   - Samsung PaymentFramework (com.samsung.android.spayfw)
   - Samsung Wallet_DKFW (com.samsung.android.carkey)
-- Samsung Push Service (com.sec.spp.push)
-- Samsung Setup Wizard (com.sec.android.app.SecSetupWizard)
+- Samsung Push Service (com.sec.spp.push) - Disabling this won't show you any prompts on your phone about new Samsung account logins on other devices.
 - Samsung text-to-speech engine (com.samsung.SMT)
 - Samsung Visit In (com.samsung.android.ipsgeofence)
-- Samsung voice input (com.samsung.android.svoiceime)
-- SamsungOne (com.monotype.android.font.samsungone) - Just a font
-- SetupWizardLegalProvider (com.sec.android.app.setupwizardlegalprovider)
+- SecurityPolicy (com.samsung.aasaservice)
 - Sharing apps:
   - Group Sharing (com.samsung.android.mobileservice)
-  - Quick Share (com.samsung.android.aware.service)
+  - Quick Share Agent (com.samsung.android.aware.service)
   - Quick Share (com.samsung.android.app.sharelive)
+ - SilentLogging (com.sec.modem.settings)
 - SIM Toolkit 1 (com.android.stk)
 - SIM toolkit 2 (com.android.stk2)
-- Smart suggestions (com.samsung.android.smartsuggestions)
+- Smart Call (com.samsung.android.smartcallprovider)
 - Smart Touch Call (com.samsung.android.visualars)
-- Smart View (com.samsung.android.smartmirroring)
-- SmartFaceService (com.samsung.android.smartface) - Smart stay
-- SmartThings Framework (com.samsung.android.service.stplatform)
+- SoHService (com.samsung.sait.sohservice)
 - Software updates:
   - Software update (com.sec.android.soagent)
   - Software update (com.wssyncmldm)
-  - SystemUpdate (com.sec.android.systemupdate)
 - Sticker Center (com.samsung.android.stickercenter)
-- Support components (com.google.mainline.telemetry) - Related to telemetry and data collection
-- Tags (com.samsung.android.service.tagservice)
-- TalkBack (com.samsung.android.accessibility.talkback) - An accessibility service that reads texts aloud
-- TetheringAutomation (com.sec.automation)
-- User Dictionary (com.android.providers.userdictionary)
-- Video call effects (com.samsung.android.vtcamerasettings)
+- Support components (com.google.mainline.telemetry)
+- SVC Agent (com.samsung.android.svcagent)
+- System Tracing (com.android.traceur)
 - VolumeMonitorProvider (com.sec.android.app.volumemonitorprovider)
-- Wallpaper services (com.samsung.android.dynamiclock)
-- Weather (com.sec.android.daemonapp)
-- Wi-Fi Calling (com.sec.unifiedwfc)
 - Wi-Fi tips (com.samsung.android.net.wifi.wifiguider)
-- Wireless emergency alerts (com.google.android.cellbroadcastreceiver)
-- WlanTest (com.sec.android.app.wlantest)
-- Work profile:
-  - Work profile (com.samsung.android.knox.containercore)
-  - Work Setup (com.android.managedprovisioning)
 
 # Google Play Services Disabled Components List
 
